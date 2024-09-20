@@ -1,0 +1,26 @@
+{
+  "name": "consumers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:rabbit:consumer": "tsx watch src/consumer-rabbit.ts",
+    "start:kafka:consumer": "tsx watch src/consumer-kafka.ts",
+    "build": "tsup src --out-dir build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5",
+    "@types/kafkajs": "^1.8.2",
+    "@types/node": "^22.5.5",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "kafkajs": "^2.2.4"
+  }
+}
